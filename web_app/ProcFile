@@ -1,1 +1,1 @@
-web: gunicorn "spotify_track_suggester:create_app()"
+web: gunicorn web_app:my_app
