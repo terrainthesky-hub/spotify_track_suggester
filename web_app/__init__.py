@@ -6,6 +6,7 @@ import os
 from web_app.models import db, migrate
 from web_app.routes.songs_routes import songs_routes
 from web_app.routes.home_routes import home_routes
+from dotenv import load_dotenv 
 
 
 load_dotenv()
