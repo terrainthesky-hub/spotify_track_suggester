@@ -4,8 +4,8 @@ from dotenv import load_dotenv
 from flask import Flask
 import os
 from web_app.models import db, migrate
-from web_app.routes.database_routes import database_routes
 from web_app.routes.songs_routes import songs_routes
+from web_app.routes.home_routes import home_routes
 
 
 load_dotenv()
@@ -23,8 +23,9 @@ def create_app():
     migrate.init_app(app, db)
 
     # configure routes:
-    app.register_blueprint(database_routes)
+ #   app.register_blueprint(database_routes)
     app.register_blueprint(songs_routes)
+    app.register_blueprint(home_routes)
     return app
 
 if __name__ == "__main__":
