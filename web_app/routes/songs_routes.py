@@ -1,6 +1,6 @@
 from flask import Blueprint, jsonify, render_template, request, redirect
 import os
-from web_app.models import Songs, db
+
 import psycopg2
 
 from dotenv import load_dotenv 
@@ -27,6 +27,8 @@ def song_recommender(artist=None, song_name=None):
     curpg.execute(query)
     track_id = curpg.fetchall()
     track_id[0][0]
+
+
     return track_id[0][0]
     #Songs(track_name=song_name)
 
