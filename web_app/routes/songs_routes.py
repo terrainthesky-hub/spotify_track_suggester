@@ -30,31 +30,3 @@ def song_recommender(artist=None, song_name=None):
 
 
     return track_id[0][0]
-    #Songs(track_name=song_name)
-
-# for i in column:
-#     if artist_name == i[0]
-#     print(artist_id)
-
-# for i in column:
-#     for v in i:
-#         if name == value:
-#             do stuff
-
-
-
-# for row in df:
-#     if row['track_name'] == track_name:
-#         return row['track_id']
-
-# for row in df:
-#     if row['track_id'] == track_id[0]:
-#         row['track_name']
-
-# build a route that takes in a track name and converts a track name to a track id
-
-# feed that track id to the model, nn model
-
-# model will return 5 most similar songs
-
-# possibly convert track id to track name
